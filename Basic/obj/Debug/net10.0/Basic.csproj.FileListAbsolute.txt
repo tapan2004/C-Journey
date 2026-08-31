@@ -1,0 +1,14 @@
+D:\C# Tutorial\Basic\bin\Debug\net10.0\Basic.exe
+D:\C# Tutorial\Basic\bin\Debug\net10.0\Basic.deps.json
+D:\C# Tutorial\Basic\bin\Debug\net10.0\Basic.runtimeconfig.json
+D:\C# Tutorial\Basic\bin\Debug\net10.0\Basic.dll
+D:\C# Tutorial\Basic\bin\Debug\net10.0\Basic.pdb
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.AssemblyInfoInputs.cache
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.AssemblyInfo.cs
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.csproj.CoreCompileInputs.cache
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.dll
+D:\C# Tutorial\Basic\obj\Debug\net10.0\refint\Basic.dll
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.pdb
+D:\C# Tutorial\Basic\obj\Debug\net10.0\Basic.genruntimeconfig.cache
+D:\C# Tutorial\Basic\obj\Debug\net10.0\ref\Basic.dll
