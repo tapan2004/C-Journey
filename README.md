@@ -9,9 +9,9 @@ The goal of this repository is not just to learn C# syntax, but to understand **
 
 ---
 
-## 📚 Topics Covered
+# 📚 Topics Covered
 
-### 1. C# Fundamentals
+## 1. C# Fundamentals
 
 * Variables and Data Types
 * Operators
@@ -30,7 +30,9 @@ The goal of this repository is not just to learn C# syntax, but to understand **
 * Access Modifiers
 * Console Input/Output
 
-### 2. Java → C# Fundamentals
+---
+
+# 2. Java → C# Fundamentals
 
 Since this repository is built from a Java developer's perspective, familiar Java concepts are mapped to their C# equivalents.
 
@@ -49,7 +51,7 @@ Since this repository is built from a Java developer's perspective, familiar Jav
 
 ---
 
-## 🧱 Object-Oriented Programming
+# 🧱 Object-Oriented Programming
 
 * Classes
 * Objects
@@ -67,7 +69,7 @@ Since this repository is built from a Java developer's perspective, familiar Jav
 * Method Overloading
 * Method Overriding
 
-### Java → C# Property Difference
+## Java → C# Property Difference
 
 Java commonly uses:
 
@@ -89,11 +91,11 @@ C# provides properties:
 public string Name { get; set; }
 ```
 
-Understanding properties is one of the important differences when moving from Java to C#.
+Properties are one of the important differences to understand when moving from Java to C#.
 
 ---
 
-## 📦 Collections
+# 📦 Collections
 
 * Arrays
 * `List<T>`
@@ -107,7 +109,7 @@ Understanding properties is one of the important differences when moving from Ja
 * Generic Collections
 * Concurrent Collections
 
-### Java → C# Collection Mapping
+## Java → C# Collection Mapping
 
 | Java                | C#                                  |
 | ------------------- | ----------------------------------- |
@@ -121,7 +123,9 @@ Understanding properties is one of the important differences when moving from Ja
 | `Stack`             | `Stack<T>`                          |
 | `ConcurrentHashMap` | `ConcurrentDictionary<TKey,TValue>` |
 
-Example:
+### Example
+
+Java:
 
 ```java
 HashMap<Integer, String> cameras = new HashMap<>();
@@ -135,7 +139,7 @@ Dictionary<int, string> cameras = new();
 
 ---
 
-## 🧬 Generics
+# 🧬 Generics
 
 Java:
 
@@ -151,7 +155,7 @@ List<string> names;
 Dictionary<int, string> students;
 ```
 
-Topics:
+## Topics
 
 * Generic Classes
 * Generic Methods
@@ -162,7 +166,7 @@ Topics:
 
 ---
 
-## ⚡ Lambda Expressions
+# ⚡ Lambda Expressions
 
 Java:
 
@@ -176,15 +180,21 @@ C#:
 x => x * 2
 ```
 
-Lambda expressions are especially important because they are heavily used with **LINQ, delegates, events, collections, and asynchronous programming**.
+Lambda expressions are especially important because they are heavily used with:
+
+* LINQ
+* Delegates
+* Events
+* Collections
+* Asynchronous Programming
 
 ---
 
-## 🔎 LINQ — C# Stream API Equivalent
+# 🔎 LINQ — C# Stream API Equivalent
 
 One of the most important concepts for a Java developer moving to C# is **LINQ**.
 
-### Java → C# Mapping
+## Java → C# Mapping
 
 | Java Stream API | C# LINQ                       |
 | --------------- | ----------------------------- |
@@ -198,7 +208,7 @@ One of the most important concepts for a Java developer moving to C# is **LINQ**
 | `collect()`     | `ToList()` / `ToDictionary()` |
 | `groupingBy()`  | `GroupBy()`                   |
 
-Java:
+### Java
 
 ```java
 var result = cameras.stream()
@@ -206,7 +216,7 @@ var result = cameras.stream()
     .toList();
 ```
 
-C#:
+### C#
 
 ```csharp
 var result = cameras
@@ -214,7 +224,7 @@ var result = cameras
     .ToList();
 ```
 
-### LINQ Topics
+## LINQ Topics
 
 * `Where`
 * `Select`
@@ -235,7 +245,7 @@ var result = cameras
 
 ---
 
-## 🚨 Exception Handling
+# 🚨 Exception Handling
 
 * `try`
 * `catch`
@@ -245,7 +255,7 @@ var result = cameras
 * Exception Filters
 * No Checked Exceptions
 
-### Java → C#
+## Java → C#
 
 | Java               | C#                   |
 | ------------------ | -------------------- |
@@ -258,11 +268,11 @@ var result = cameras
 
 ---
 
-## 🔄 Async & Concurrency
+# 🔄 Async & Concurrency
 
 This area is particularly important for backend and camera/RTSP applications.
 
-### Java → C# Mapping
+## Java → C# Mapping
 
 | Java                  | C#                                   |
 | --------------------- | ------------------------------------ |
@@ -278,9 +288,7 @@ This area is particularly important for backend and camera/RTSP applications.
 | `Semaphore`           | `SemaphoreSlim`                      |
 | Cancellation patterns | `CancellationToken`                  |
 
-Example:
-
-Java:
+### Java
 
 ```java
 CompletableFuture.runAsync(() -> {
@@ -288,7 +296,7 @@ CompletableFuture.runAsync(() -> {
 });
 ```
 
-C#:
+### C#
 
 ```csharp
 Task.Run(() =>
@@ -297,7 +305,7 @@ Task.Run(() =>
 });
 ```
 
-C# async programming:
+### C# async programming
 
 ```csharp
 async Task ConnectCameraAsync()
@@ -306,7 +314,7 @@ async Task ConnectCameraAsync()
 }
 ```
 
-### Topics
+## Topics
 
 * `Thread`
 * ThreadPool
@@ -324,18 +332,19 @@ async Task ConnectCameraAsync()
 
 ---
 
-## 🎯 Delegates & Events
+# 🎯 Delegates & Events
 
-Important C# concepts that don't have a direct one-to-one Java equivalent.
+Delegates and events are important C# concepts that do not have a direct one-to-one Java equivalent.
 
-### Delegates
+## Delegates
 
 * `Action`
 * `Func`
 * `Predicate`
 * Custom Delegates
+* Lambda + Delegates
 
-### Events
+## Events
 
 * Event declaration
 * Event handlers
@@ -344,9 +353,9 @@ Important C# concepts that don't have a direct one-to-one Java equivalent.
 
 ---
 
-## 🧩 Important C# Concepts
+# 🧩 Important C# Concepts
 
-These concepts need to be learned separately rather than treated as simple Java equivalents:
+These concepts should be learned separately rather than treated as simple Java equivalents.
 
 * Properties
 * Delegates
@@ -376,7 +385,7 @@ These concepts need to be learned separately rather than treated as simple Java 
 
 Learning the .NET CLI is an important part of becoming comfortable with the .NET ecosystem.
 
-Common commands:
+### Common Commands
 
 ```bash
 dotnet new console
@@ -387,7 +396,7 @@ dotnet clean
 dotnet restore
 ```
 
-### Java → .NET Mapping
+## Java → .NET Mapping
 
 | Java             | C# / .NET           |
 | ---------------- | ------------------- |
@@ -404,9 +413,9 @@ dotnet restore
 
 ---
 
-## 📦 NuGet & Project Structure
+# 📦 NuGet & Project Structure
 
-Topics:
+## Topics
 
 * `.csproj`
 * Solution files
@@ -418,7 +427,7 @@ Topics:
 * MSBuild
 * Project references
 
-Example:
+### Example
 
 ```text
 CSharpJourney/
@@ -439,17 +448,31 @@ CSharpJourney/
 
 # 🌐 ASP.NET Core
 
-After learning C# and the .NET fundamentals, the next step is **ASP.NET Core**.
+After learning C# and .NET fundamentals, the next step is **ASP.NET Core**.
 
-### Spring Boot → ASP.NET Core
+ASP.NET Core is the web framework in the .NET ecosystem used to build:
 
-| Java / Spring            | C# / ASP.NET Core         |
+* REST APIs
+* Web applications
+* Backend services
+* Real-time applications
+* gRPC services
+
+---
+
+# ☕ Spring Boot → ASP.NET Core
+
+| Java / Spring Boot       | C# / ASP.NET Core         |
 | ------------------------ | ------------------------- |
 | Spring Boot              | ASP.NET Core              |
 | Controller               | Controller / Minimal API  |
 | `@RestController`        | `[ApiController]`         |
+| `@RequestMapping`        | `[Route]`                 |
 | `@GetMapping`            | `[HttpGet]`               |
 | `@PostMapping`           | `[HttpPost]`              |
+| `@PutMapping`            | `[HttpPut]`               |
+| `@PatchMapping`          | `[HttpPatch]`             |
+| `@DeleteMapping`         | `[HttpDelete]`            |
 | `@Autowired`             | Built-in .NET DI          |
 | Spring DI                | .NET DI                   |
 | `application.properties` | `appsettings.json`        |
@@ -458,11 +481,13 @@ After learning C# and the .NET fundamentals, the next step is **ASP.NET Core**.
 | Interceptor              | Middleware / Filters      |
 | Jackson                  | `System.Text.Json`        |
 | JPA / Hibernate          | EF Core                   |
-| `CompletableFuture`      | `Task`                    |
+| `CompletableFuture<T>`   | `Task<T>`                 |
 
-### ASP.NET Core Topics
+---
 
-* HTTP fundamentals
+# 🌐 ASP.NET Core Topics
+
+* HTTP Fundamentals
 * REST APIs
 * Controllers
 * Minimal APIs
@@ -475,27 +500,580 @@ After learning C# and the .NET fundamentals, the next step is **ASP.NET Core**.
 * Logging
 * Authentication
 * Authorization
-* JSON serialization
-* Exception handling
-* API validation
-* HTTP clients
+* JSON Serialization
+* Exception Handling
+* API Validation
+* HTTP Clients
+* Model Binding
+* Model Validation
+* API Documentation
+* Swagger / OpenAPI
 
 ---
 
 # 🔌 REST API
 
-### Java/Spring → ASP.NET Core
+ASP.NET Core supports all the standard HTTP operations required for CRUD-based REST APIs.
 
-| Spring           | ASP.NET Core                        |
-| ---------------- | ----------------------------------- |
-| `@GetMapping`    | `[HttpGet]`                         |
-| `@PostMapping`   | `[HttpPost]`                        |
-| `@PutMapping`    | `[HttpPut]`                         |
-| `@DeleteMapping` | `[HttpDelete]`                      |
-| `@RequestBody`   | `[FromBody]`                        |
-| `@PathVariable`  | `[FromRoute]`                       |
-| `@RequestParam`  | `[FromQuery]`                       |
-| `ResponseEntity` | `IActionResult` / `ActionResult<T>` |
+## CRUD Operations
+
+| Operation         | HTTP Method | Spring Boot      | ASP.NET Core   |
+| ----------------- | ----------- | ---------------- | -------------- |
+| Read              | GET         | `@GetMapping`    | `[HttpGet]`    |
+| Create            | POST        | `@PostMapping`   | `[HttpPost]`   |
+| Update completely | PUT         | `@PutMapping`    | `[HttpPut]`    |
+| Update partially  | PATCH       | `@PatchMapping`  | `[HttpPatch]`  |
+| Delete            | DELETE      | `@DeleteMapping` | `[HttpDelete]` |
+
+---
+
+# 📝 ASP.NET Core CRUD Example
+
+A typical ASP.NET Core Controller can look like this:
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+
+[ApiController]
+[Route("api/cameras")]
+public class CameraController : ControllerBase
+{
+    [HttpGet]
+    public IActionResult GetAllCameras()
+    {
+        // Get all cameras
+        return Ok();
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetCamera(int id)
+    {
+        // Get specific camera
+        return Ok();
+    }
+
+    [HttpPost]
+    public IActionResult CreateCamera(Camera camera)
+    {
+        // Create camera
+        return Ok(camera);
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult UpdateCamera(int id, Camera camera)
+    {
+        // Update entire camera
+        return Ok(camera);
+    }
+
+    [HttpPatch("{id}")]
+    public IActionResult PartialUpdateCamera(int id, Camera camera)
+    {
+        // Update part of a camera
+        return Ok(camera);
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteCamera(int id)
+    {
+        // Delete camera
+        return NoContent();
+    }
+}
+```
+
+---
+
+# 🔍 GET — Read Data
+
+Spring Boot:
+
+```java
+@GetMapping
+public List<Camera> getAll() {
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpGet]
+public IActionResult GetAll()
+{
+    // ...
+    return Ok();
+}
+```
+
+Request:
+
+```text
+GET /api/cameras
+```
+
+---
+
+# 🔎 GET By ID — Route Parameter
+
+Spring Boot:
+
+```java
+@GetMapping("/{id}")
+public Camera getById(@PathVariable int id) {
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpGet("{id}")]
+public IActionResult GetById(int id)
+{
+    // ...
+    return Ok();
+}
+```
+
+Request:
+
+```text
+GET /api/cameras/100
+```
+
+Here:
+
+```text
+100 → id
+```
+
+The `{id}` in the route is bound to the `id` parameter.
+
+---
+
+# ➕ POST — Create Data
+
+Spring Boot:
+
+```java
+@PostMapping
+public Camera create(@RequestBody Camera camera) {
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpPost]
+public IActionResult Create(Camera camera)
+{
+    // ...
+    return Ok(camera);
+}
+```
+
+You can explicitly specify the request body:
+
+```csharp
+[HttpPost]
+public IActionResult Create([FromBody] Camera camera)
+{
+    // ...
+    return Ok(camera);
+}
+```
+
+With `[ApiController]`, ASP.NET Core can automatically infer that a complex object such as `Camera` comes from the request body.
+
+---
+
+# ✏️ PUT — Complete Update
+
+PUT is normally used when replacing/updating a resource completely.
+
+Spring Boot:
+
+```java
+@PutMapping("/{id}")
+public Camera update(
+        @PathVariable int id,
+        @RequestBody Camera camera) {
+
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpPut("{id}")]
+public IActionResult Update(int id, Camera camera)
+{
+    // ...
+    return Ok(camera);
+}
+```
+
+Request:
+
+```text
+PUT /api/cameras/100
+```
+
+---
+
+# 🩹 PATCH — Partial Update
+
+PATCH is normally used when updating only part of a resource.
+
+Spring Boot:
+
+```java
+@PatchMapping("/{id}")
+public Camera partialUpdate(
+        @PathVariable int id,
+        @RequestBody Camera camera) {
+
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpPatch("{id}")]
+public IActionResult PartialUpdate(int id, Camera camera)
+{
+    // ...
+    return Ok(camera);
+}
+```
+
+Example resource:
+
+```json
+{
+    "name": "Camera 100",
+    "ipAddress": "192.168.1.100",
+    "status": "Online",
+    "resolution": "5MP"
+}
+```
+
+A PATCH request could update only the status:
+
+```json
+{
+    "status": "Offline"
+}
+```
+
+---
+
+# 🗑️ DELETE — Remove Data
+
+Spring Boot:
+
+```java
+@DeleteMapping("/{id}")
+public void delete(@PathVariable int id) {
+    // ...
+}
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpDelete("{id}")]
+public IActionResult Delete(int id)
+{
+    // ...
+    return NoContent();
+}
+```
+
+Request:
+
+```text
+DELETE /api/cameras/100
+```
+
+---
+
+# 🔍 Query Parameters
+
+There is normally **no `QUERY` HTTP method** in a standard CRUD REST API.
+
+When developers say "query", they often mean **query parameters**.
+
+Example:
+
+```text
+GET /api/cameras?status=online&page=1
+```
+
+Here:
+
+```text
+status=online
+page=1
+```
+
+are query parameters.
+
+Query parameters are commonly used for:
+
+* Filtering
+* Searching
+* Sorting
+* Pagination
+* Optional parameters
+
+---
+
+# 🔎 Query Parameters — Spring Boot
+
+```java
+@GetMapping
+public List<Camera> getCameras(
+        @RequestParam String status,
+        @RequestParam int page) {
+
+    // ...
+}
+```
+
+Request:
+
+```text
+GET /api/cameras?status=online&page=1
+```
+
+---
+
+# 🔎 Query Parameters — ASP.NET Core
+
+```csharp
+[HttpGet]
+public IActionResult GetCameras(
+    string status,
+    int page)
+{
+    // ...
+    return Ok();
+}
+```
+
+ASP.NET Core automatically binds:
+
+```text
+status → "online"
+page   → 1
+```
+
+You can also explicitly specify query parameters:
+
+```csharp
+[HttpGet]
+public IActionResult GetCameras(
+    [FromQuery] string status,
+    [FromQuery] int page)
+{
+    // ...
+    return Ok();
+}
+```
+
+---
+
+# 📍 Route Parameters vs Query Parameters
+
+This is an important distinction.
+
+## Route Parameter
+
+Used to identify a specific resource.
+
+```text
+GET /api/cameras/100
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpGet("{id}")]
+public IActionResult Get(int id)
+{
+    return Ok();
+}
+```
+
+Here:
+
+```text
+{id} → route parameter
+```
+
+---
+
+## Query Parameter
+
+Used for filtering, searching, sorting, pagination, etc.
+
+```text
+GET /api/cameras?status=online&page=1
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpGet]
+public IActionResult Get(
+    [FromQuery] string status,
+    [FromQuery] int page)
+{
+    return Ok();
+}
+```
+
+Here:
+
+```text
+status → query parameter
+page   → query parameter
+```
+
+---
+
+# 📦 Request Body
+
+Spring Boot:
+
+```java
+@PostMapping
+public Camera create(@RequestBody Camera camera)
+```
+
+ASP.NET Core:
+
+```csharp
+[HttpPost]
+public IActionResult Create([FromBody] Camera camera)
+```
+
+Example JSON:
+
+```json
+{
+    "name": "Camera 001",
+    "ipAddress": "192.168.1.100",
+    "resolution": "5MP"
+}
+```
+
+---
+
+# 📤 Response Handling
+
+Spring Boot commonly uses:
+
+```java
+ResponseEntity<Camera>
+```
+
+ASP.NET Core can use:
+
+```csharp
+IActionResult
+```
+
+or:
+
+```csharp
+ActionResult<Camera>
+```
+
+Example:
+
+```csharp
+[HttpGet("{id}")]
+public ActionResult<Camera> GetCamera(int id)
+{
+    var camera = GetCameraFromDatabase(id);
+
+    if (camera == null)
+    {
+        return NotFound();
+    }
+
+    return Ok(camera);
+}
+```
+
+Common HTTP responses:
+
+```text
+200 OK
+201 Created
+204 No Content
+400 Bad Request
+401 Unauthorized
+403 Forbidden
+404 Not Found
+500 Internal Server Error
+```
+
+---
+
+# 🏗️ Recommended ASP.NET Core Structure
+
+For a larger application, the controller should not contain all business logic.
+
+A common structure is:
+
+```text
+MyApplication/
+│
+├── Controllers/
+│   └── CameraController.cs
+│
+├── Services/
+│   └── CameraService.cs
+│
+├── Models/
+│   └── Camera.cs
+│
+├── DTOs/
+│   └── CameraDto.cs
+│
+├── Data/
+│   └── ApplicationDbContext.cs
+│
+├── Repositories/
+│   └── CameraRepository.cs
+│
+├── Program.cs
+├── appsettings.json
+└── MyApplication.csproj
+```
+
+The general flow is:
+
+```text
+Client
+   ↓
+Controller
+   ↓
+Service
+   ↓
+Repository / EF Core
+   ↓
+Database
+```
+
+This is conceptually similar to the layered architecture commonly used in Spring Boot applications.
 
 ---
 
@@ -503,7 +1081,7 @@ After learning C# and the .NET fundamentals, the next step is **ASP.NET Core**.
 
 The learning path also includes communication between services using **gRPC**.
 
-Topics:
+## Topics
 
 * What is RPC?
 * Protocol Buffers
@@ -515,7 +1093,7 @@ Topics:
 * gRPC in .NET
 * gRPC communication between services
 
-Java gRPC experience can be mapped to the .NET gRPC ecosystem.
+Java gRPC concepts can be mapped to the .NET gRPC ecosystem.
 
 ---
 
@@ -523,7 +1101,7 @@ Java gRPC experience can be mapped to the .NET gRPC ecosystem.
 
 Database learning will focus on **SQLite** for lightweight application storage.
 
-### Java → C# Mapping
+## Java → C# Mapping
 
 | Java            | C# / .NET     |
 | --------------- | ------------- |
@@ -535,7 +1113,7 @@ Database learning will focus on **SQLite** for lightweight application storage.
 | `@Entity`       | EF Core model |
 | `@Id`           | `[Key]`       |
 
-Learning path:
+## Learning Path
 
 ```text
 C#
@@ -547,9 +1125,9 @@ EF Core
 SQLite
 ```
 
-Topics:
+## Topics
 
-* SQL basics
+* SQL Basics
 * Tables
 * Primary Keys
 * Foreign Keys
@@ -558,7 +1136,7 @@ Topics:
 * EF Core
 * `DbContext`
 * Migrations
-* LINQ queries
+* LINQ Queries
 * SQLite
 
 ---
@@ -585,16 +1163,16 @@ string json = JsonSerializer.Serialize(camera);
 JSON will be particularly useful for:
 
 * Configuration
-* Camera status
-* API communication
-* Service communication
-* Application data
+* Camera Status
+* API Communication
+* Service Communication
+* Application Data
 
 ---
 
 # 🧪 Testing
 
-### Java → C#
+## Java → C#
 
 | Java    | C#                     |
 | ------- | ---------------------- |
@@ -607,7 +1185,7 @@ Primary testing framework for this journey:
 
 **xUnit**
 
-Topics:
+## Topics
 
 * Unit Testing
 * Integration Testing
@@ -615,7 +1193,7 @@ Topics:
 * Test Fixtures
 * Mocking
 * Test-driven development basics
-* Automated testing
+* Automated Testing
 
 ---
 
@@ -685,9 +1263,12 @@ These are the concepts I am prioritizing as a Java developer moving to C#:
 ```text
 JAVA                         C#
 ------------------------------------------------
+
 package                 →    namespace
 import                  →    using
+
 System.out.println      →    Console.WriteLine
+
 String                  →    string
 boolean                 →    bool
 
@@ -751,7 +1332,21 @@ Instead of learning C# syntax in isolation, I am using familiar Java concepts as
 * SQLite
 * Automated Testing
 
-The long-term goal is to move from **Java developer → productive C#/.NET developer** and apply these skills to real-world software projects.
+The long-term goal is to move from:
+
+```text
+Java Developer
+      ↓
+C# Developer
+      ↓
+.NET Developer
+      ↓
+ASP.NET Core Developer
+      ↓
+Productive .NET Engineer
+```
+
+and apply these skills to real-world software projects.
 
 ---
 
@@ -766,7 +1361,7 @@ Each topic is implemented through practical examples so that the repository beco
 
 ---
 
-## 🚀 Learning Philosophy
+# 🚀 Learning Philosophy
 
 > **Don't just learn the syntax. Understand the concept, compare it with Java, implement it in C#, and use it in a real application.**
 
@@ -786,10 +1381,10 @@ Apply to real-world projects
 
 ---
 
-## 📌 Future Topics
+# 📌 Future Topics
 
 * Advanced LINQ
-* Advanced async programming
+* Advanced Async Programming
 * Dependency Injection
 * Design Patterns
 * ASP.NET Core Web APIs
@@ -803,12 +1398,16 @@ Apply to real-world projects
 * Production Environment Setup
 * CI/CD
 * Performance Optimization
-* Real-world .NET projects
+* Real-world .NET Projects
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Tapan**
+**Tapan Manna**
 
-Learning and documenting the journey from **Java → C# → .NET** through practical development.
+Learning and documenting the journey from:
+
+**Java → C# → .NET**
+
+through practical development.
